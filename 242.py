@@ -1,5 +1,7 @@
 # 242. Valid Anagram
 
+from collections import Counter # for func 3rd
+    
 def isanagram1(s, t): # in this approach we are counting the number of 
                             # each char in both string and then compare both the string.
     if len(s)!=len(t):
@@ -17,5 +19,6 @@ def isanagram1(s, t): # in this approach we are counting the number of
 def isAnagram2(s,t):# I this, we used a sorted() func which sorts strg and converts it 
     return sorted(s)==sorted(t)# to a list of chars in the string.
 
-def isAnagram(s,t):# Counter acts as a hashmap, which counts all the occurance of char in the strg 
+
+def isAnagram3(s,t):# Counter acts as a hashmap, which counts all the occurance of char in the strg 
     return Counter(s)== Counter(t)
