@@ -1,6 +1,7 @@
 # 242. Valid Anagram
 
 from collections import Counter # for func 3rd
+
     
 def isanagram1(s, t): # in this approach we are counting the number of 
                             # each char in both string and then compare both the string.
